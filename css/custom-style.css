@@ -1,0 +1,187 @@
+/* Import Pragmatic Extended Font */
+@font-face {
+    font-family: 'Pragmatic Extended';
+    src: url('../fonts/PragmaticExtended-Regular.woff2') format('woff2'),
+         url('../fonts/PragmaticExtended-Regular.woff') format('woff'),
+         url('../fonts/PragmaticExtended-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Countdown Container */
+.custom-countdown-container {
+    font-family: 'Pragmatic Extended', Arial, sans-serif;
+    text-align: center;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    max-width: 900px; /* Adjusted for large screens */
+    width: 100%;
+}
+
+/* Title */
+.custom-countdown-container h1 {
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Countdown Timer */
+.custom-countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px; /* Large font for desktop */
+    font-weight: bold;
+    color: #000;
+}
+
+.custom-time-unit {
+    margin: 0 15px;
+}
+
+.custom-seconds {
+    color: #ff0080;
+}
+
+/* Labels */
+.custom-labels {
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff0080;
+    text-transform: uppercase;
+}
+
+.custom-labels div {
+    margin: 0 50px;
+}
+
+/* Button */
+.custom-btn {
+    background-color: #ff0080;
+    color: white;
+    font-size: 28px;
+    padding: 18px 50px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Pragmatic Extended', Arial, sans-serif;
+}
+
+.custom-btn:hover {
+    background-color: #d40067;
+}
+
+/* 📱 Responsive Styles for Tablet & Mobile */
+@media (max-width: 1200px) {
+    .custom-countdown-container {
+        max-width: 80%;
+        padding: 30px;
+    }
+    .custom-countdown-container h1 {
+        font-size: 48px;
+    }
+    .custom-countdown-timer {
+        font-size: 90px;
+    }
+    .custom-labels {
+        font-size: 20px;
+    }
+    .custom-btn {
+        font-size: 26px;
+        padding: 16px 45px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .custom-countdown-container {
+        max-width: 85%;
+    }
+    .custom-countdown-container h1 {
+        font-size: 42px;
+    }
+    .custom-countdown-timer {
+        font-size: 80px;
+    }
+    .custom-labels {
+        font-size: 18px;
+    }
+    .custom-btn {
+        font-size: 24px;
+        padding: 15px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-countdown-container {
+        max-width: 90%;
+        padding: 25px;
+    }
+    .custom-countdown-container h1 {
+        font-size: 38px;
+    }
+    .custom-countdown-timer {
+        font-size: 60px;
+    }
+    .custom-labels {
+        font-size: 16px;
+    }
+    .custom-labels div {
+        margin: 0 30px;
+    }
+    .custom-btn {
+        font-size: 22px;
+        padding: 14px 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-countdown-container {
+        max-width: 95%;
+        padding: 20px;
+    }
+    .custom-countdown-container h1 {
+        font-size: 32px;
+    }
+    .custom-countdown-timer {
+        font-size: 50px;
+    }
+    .custom-labels {
+        font-size: 14px;
+    }
+    .custom-labels div {
+        margin: 0 20px;
+    }
+    .custom-btn {
+        font-size: 20px;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .custom-countdown-container {
+        padding: 15px;
+    }
+    .custom-countdown-container h1 {
+        font-size: 28px;
+    }
+    .custom-countdown-timer {
+        font-size: 40px;
+    }
+    .custom-labels {
+        font-size: 12px;
+    }
+    .custom-labels div {
+        margin: 0 15px;
+    }
+    .custom-btn {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+}

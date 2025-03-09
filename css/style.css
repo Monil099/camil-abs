@@ -486,16 +486,13 @@ ul {
   padding: 70px 0px;
   background: #fe018a;
 }
-
 .testimonials-section .head-title {
   color: #fff;
   margin-bottom: 40px;
 }
-
 .testimonials-section .head-title h1 {
   color: #ffffff;
 }
-
 .testimonials-box {
   /* border: 1px solid #fff; */
   color: #ffffff;
@@ -506,37 +503,27 @@ ul {
   text-align: center;
   /* min-height: 530px; */
 }
-
-.testimonials-section .one-time .slick-list {
-  height: 400px !important;
-}
-
 .testimonials-box .rate-img {
   margin-top: 10px;
 }
-
 .testimonials-box .rate-img img {
   width: 300px;
   margin: auto;
 }
-
 .testimonials-box p {
   font-size: 22px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 .testimonials-box p strong {
   font-weight: 600;
   margin-bottom: 10px;
 }
-
 .testimonials-box h2 {
   font-size: 28px;
   font-family: Inter-Bold;
   text-align: center;
 }
-
 .testimonials-section .testimonials-slider .owl-nav {
   display: block;
   display: flex;
@@ -544,7 +531,6 @@ ul {
   justify-content: center;
   gap: 20px;
 }
-
 .testimonials-section .testimonials-slider .owl-nav button {
   background-color: rgb(255, 255, 255);
   top: 45%;
@@ -556,22 +542,18 @@ ul {
   justify-content: center;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.12);
 }
-
 .testimonials-section .testimonials-slider .owl-nav button:hover {
   background: #f4f4f4;
 }
-
 .testimonials-section .testimonials-slider .owl-nav button span {
   font-size: 50px;
   display: inline-block;
   margin-top: -12px;
   font-weight: 800;
 }
-
 .testimonials-section .testimonials-slider .owl-nav .owl-prev {
   left: -20px;
 }
-
 .testimonials-section .testimonials-slider .owl-nav .owl-next {
   right: -20px;
 }
@@ -718,7 +700,7 @@ ul {
 
 /* register-section */
 .register-section {
-  text-align: center;
+  padding: 50px 0px;
   position: relative;
   z-index: 9;
   width: 100%;
@@ -728,6 +710,27 @@ ul {
 .register-section .food-img .slick-track,
 .register-section .food-img .slick-list {
   height: auto;
+}
+
+.register-section h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: Inter-Bold;
+  margin-bottom: 20px;
+}
+
+.register-section .container .row .nutrition-section {
+  background: white;
+  text-align: center;
+}
+
+.register-section .container .nutrition-item h3 {
+  padding-top: 30px;
+  font-size: 20px;
+  color: #ff0080;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
 }
 
 /* story-section */
@@ -917,7 +920,7 @@ svg.icon__arrow-up {
 }
 
 @media only screen and (max-width: 1440px) {
-  .subscribe-dec h1 {
+  .subscribe-dec h1  {
     font-size: 80px;
   }
 
@@ -1016,7 +1019,7 @@ svg.icon__arrow-up {
     margin: auto;
   }
 
-  .subscribe-dec h1 {
+  .subscribe-dec h1, .register-section h1  {
     font-size: 60px;
   }
 
@@ -1260,7 +1263,7 @@ svg.icon__arrow-up {
     text-align: start;
   }
 
-  .subscribe-dec h1 {
+  .subscribe-dec h1, .register-section h1 {
     font-size: 40px;
   }
 
@@ -1594,8 +1597,13 @@ svg.icon__arrow-up {
     margin-bottom: 20px;
   }
 
-  .subscribe-dec h1 {
+  .subscribe-dec h1  {
     font-size: 32px;
+  }
+
+  .register-section h1  {
+    font-size: 32px;
+    text-align: center;;
   }
 
   .subscribe-dec h3 {
@@ -1727,7 +1735,7 @@ svg.icon__arrow-up {
     letter-spacing: 0px;
   }
 
-  .subscribe-dec h1 {
+  .subscribe-dec h1, .register-section h1  {
     font-size: 36px;
   }
 
@@ -1748,3 +1756,126 @@ svg.icon__arrow-up {
 
 
 /* new css 09/03/2025 */
+/* Background Styling */
+.ab-wheel {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Image */
+.background-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Button Container */
+.button-container {
+  position: absolute;
+  bottom: 10%; /* Adjust as needed */
+  right: 3%;
+  transform: translateX(-50%); /* Centers the button */
+}
+
+/* Shop Button Styling */
+.button-container a {
+  color: rgb(255, 255, 255);
+  background-color: #ff0080;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 70px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 0, 128, 0.3);
+  border: none;
+}
+
+/* Button Hover Effect */
+.button-container a:hover {
+  background-color: #d40067;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .button-container {
+    bottom: 5%;
+    right: 0%;
+    transform: translateX(-50%);
+  }
+
+  .button-container a {
+    font-size: 20px;
+    padding: 8px 50px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .button-container {
+    bottom: 5%;
+    right: -2%;
+    transform: translateX(-50%);
+  }
+
+  .button-container a {
+    font-size: 17px;
+    padding: 8px 40px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .button-container {
+    bottom: 5%;
+    right: 0%;
+    transform: translateX(-50%);
+  }
+
+  .button-container a {
+    font-size: 17px;
+    padding: 8px 50px;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .button-container {
+    bottom: 5%;
+    right: -2%;
+    transform: translateX(-50%);
+  }
+
+  .button-container a {
+    font-size: 14px;
+    padding: 8px 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .button-container {
+    bottom: 3%;
+    right: -2%;
+    transform: translateX(-50%);
+  }
+
+  .button-container a {
+    font-size: 12px;
+    padding: 8px 25px;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .button-container {
+    bottom: 3%;
+    right: -2%;
+    transform: translateX(-50%);
+  }
+
+  .button-container a {
+    font-size: 10px;
+    padding: 5px 20px;
+  }
+}

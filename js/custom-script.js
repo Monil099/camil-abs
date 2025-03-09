@@ -22,3 +22,11 @@ function updateCustomCountdown() {
 
 setInterval(updateCustomCountdown, 1000);
 updateCustomCountdown();
+
+
+// membership button
+
+document.querySelector('.membership-btn').addEventListener('click', function() {
+    alert('You clicked Join Now!');
+});
+

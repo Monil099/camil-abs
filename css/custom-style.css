@@ -1,4 +1,3 @@
-
 /* ✅ Import Pragmatica Extended Book Font */
 @font-face {
     font-family: 'Pragmatica Extended Book';
@@ -11,8 +10,8 @@
 @font-face {
     font-family: 'Garet';
     src: url('../fonts/Garet-Regular.woff2') format('woff2'),
-         url('../fonts/Garet-Regular.woff') format('woff'),
-         url('../fonts/Garet-Regular.ttf') format('truetype');
+        url('../fonts/Garet-Regular.woff') format('woff'),
+        url('../fonts/Garet-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -144,7 +143,7 @@
 
     .custom-labels {
         font-size: 12px;
-        gap:20px;
+        gap: 20px;
     }
 
     .custom-btn {
@@ -170,7 +169,9 @@
 }
 
 /* Ensure content is on top */
-.membership-container, .membership-title, .membership-btn {
+.membership-container,
+.membership-title,
+.membership-btn {
     position: relative;
     z-index: 2;
 }
@@ -195,7 +196,8 @@
 }
 
 /* Membership Cards */
-.membership-monthly, .membership-yearly {
+.membership-monthly,
+.membership-yearly {
     background: white;
     padding: 30px;
     border-radius: 80px;
@@ -286,7 +288,8 @@
     border-radius: 50px;
     text-align: center;
     margin: 5px auto;
-    font-family: 'Nunito Sans', sans-serif; /* Applied Nunito Sans */
+    font-family: 'Nunito Sans', sans-serif;
+    
 }
 
 /* Join Now Button */
@@ -312,25 +315,33 @@
     .membership-container {
         gap: 10px;
     }
-    
-    .membership-monthly, .membership-yearly {
+
+    .membership-monthly,
+    .membership-yearly {
         width: 100%;
         padding: 20px;
     }
 
-    .membership-heading{
-        font-size: 30px;;
+    .membership-heading {
+        font-size: 30px;
+        ;
     }
+
     .membership-title {
         font-size: 46px;
     }
-    .membership-price-wrapper{
+
+    .membership-price-wrapper {
         font-size: 20px !important;
     }
 }
 
 /* 📌 Mobile View */
 @media (max-width: 768px) {
+    .membership-section-wrapper {
+        background-color: #f2f2f2;
+    }
+
     .membership-title {
         font-size: 40px;
     }
@@ -340,7 +351,8 @@
         align-items: center;
     }
 
-    .membership-monthly, .membership-yearly {
+    .membership-monthly,
+    .membership-yearly {
         width: 95%;
     }
 
@@ -352,29 +364,43 @@
         font-size: 22px;
         padding: 12px 40px;
     }
-    .membership-price{
-        font-size: 30px;
+
+    .membership-price {
+        font-size: 20px;
     }
+    .membership-heading {
+        font-size: 20px;
+    }
+    .membership-yearly .membership-highlight{
+        font-size: 20px ;
+    }
+
 }
 
 /* 📌 Small Mobile View */
 @media (max-width: 480px) {
+    .membership-section-wrapper {
+        background-color: #f2f2f2;
+    }
     .membership-title {
         font-size: 40px;
     }
 
-    .membership-heading{
+    .membership-heading {
         font-size: 35px;
     }
 
-    .membership-monthly, .membership-yearly {
+    .membership-monthly,
+    .membership-yearly {
         width: 100%;
         font-size: 10px;
         padding: 20px;
     }
-    .membership-price{
+
+    .membership-price {
         font-size: 15pz;
     }
+
     .membership-btn {
         font-size: 20px;
         padding: 10px 30px;
@@ -382,6 +408,21 @@
 
     .membership-price-wrapper {
         flex-direction: column;
+    }
+    .membership-heading {
+        font-size: 25px;
+    }
+    .membership-yearly .membership-highlight{
+        font-size: 20px ;
+    }
+    .membership-regular-price{
+        font-size: 20px;
+    }
+    .membership-regular-price span{
+        font-size: 20px;
+    }
+    .membership-save{
+        font-size: 20px;
     }
 }
 
@@ -625,4 +666,100 @@
 .feature p {
     font-size: 14px;
     color: #333;
+}
+
+
+/* Virtual Gym Section */
+.virtual-gym-section {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 50px 5%;
+}
+
+/* Header Alignment */
+.virtual-gym-header {
+    text-align: left;
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+
+/* Title Styling */
+.virtual-gym-title {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ff3392;
+    font-family: 'Pragmatica Extended Book', Arial, sans-serif;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Description Styling */
+.virtual-gym-description {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Pragmatica Extended Book', Arial, sans-serif;
+    text-align: left;
+}
+
+/* Workout Images */
+.workout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Left-align images */
+    gap: 20px;
+}
+
+.workout-item {
+    width: 100%;
+    max-width: 2000px;
+}
+
+.workout-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .virtual-gym-title {
+        font-size: 36px;
+    }
+
+    .virtual-gym-description {
+        font-size: 16px;
+    }
+
+    .workout-container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .virtual-gym-header {
+        max-width: 100%;
+    }
+
+    .virtual-gym-title {
+        font-size: 32px;
+    }
+
+    .virtual-gym-description {
+        font-size: 14px;
+    }
+
+    .workout-container {
+        align-items: center; /* Center images on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .virtual-gym-title {
+        font-size: 28px;
+    }
+
+    .virtual-gym-description {
+        font-size: 12px;
+    }
 }

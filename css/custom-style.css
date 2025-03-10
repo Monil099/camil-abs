@@ -163,8 +163,8 @@
     background: url('../img/newimg/Fitness\ Website\ in\ Light\ Blue\ White\ Grey\ Clean\ Grids\ Style\ \(2\).png') no-repeat center center;
     background-size: auto;
     background-attachment: scroll;
-    margin: 50px auto;
-    padding: 80px 20px;
+    /* margin: 50px auto; */
+    padding: 40px 20px;
     border-radius: 20px;
     position: relative;
 }

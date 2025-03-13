@@ -16,12 +16,38 @@
     font-style: normal;
 }
 
+.banner-inner-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.banner-inner-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Add spacing for mobile version */
+.bg-mobile {
+    margin-top: 20px;
+}
+
+/* Ensure no overlap */
+.bg-web img {
+    position: relative;
+    z-index: 1;
+}
 
 /* ==============================
    📌 Countdown Timer Section
 ================================= */
 /* Countdown Container */
+/* ==============================
+   📌 Countdown Timer Section
+================================= */
 .custom-countdown-container {
     font-family: 'Pragmatica Extended Book', Arial, sans-serif;
     text-align: center;
@@ -92,65 +118,46 @@
     background-color: #d40067;
 }
 
-/* ✅ Responsive Fixes */
-@media (max-width: 768px) {
-    .custom-countdown-container {
-        max-width: 90%;
-        padding: 30px;
-    }
-
-    .custom-countdown-container h1 {
-        font-size: 38px;
-    }
-
-    /* Fix alignment for mobile */
-    .custom-countdown-timer {
-        font-size: 60px;
-        gap: 8px;
-    }
-
-    .custom-time-unit {
-        min-width: 60px;
-        font-size: 50px;
-    }
-
-    /* Ensure labels align properly */
-    .custom-labels {
-        font-size: 16px;
-        gap: 50px;
-    }
-
-    .custom-btn {
-        font-size: 22px;
-        padding: 14px 35px;
-    }
+/* ==============================
+   📌 Section That Appears After Countdown Ends
+================================= */
+.after-countdown-section {
+    display: none; /* Initially hidden */
+    background-color: #ff0080;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 250px;
 }
 
-@media (max-width: 480px) {
-    .custom-countdown-container h1 {
-        font-size: 32px;
-    }
-
-    .custom-countdown-timer {
-        font-size: 20px;
-        gap: 5px;
-    }
-
-    .custom-time-unit {
-        min-width: 50px;
-        font-size: 30px;
-    }
-
-    .custom-labels {
-        font-size: 12px;
-        gap: 20px;
-    }
-
-    .custom-btn {
-        font-size: 20px;
-        padding: 12px 30px;
-    }
+/* Title */
+.after-countdown-section h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
+
+/* Join Now Button */
+.join-now-btn {
+    background-color: #28a745;
+    color: white;
+    font-size: 24px;
+    padding: 15px 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.join-now-btn:hover {
+    background-color: #218838;
+}
+
 
 /* ==============================
    📌 Membership Section (Background Image)
@@ -761,5 +768,249 @@
 
     .virtual-gym-description {
         font-size: 12px;
+    }
+}
+
+/* slider css */
+/* ==============================
+   📌 Custom Slider Section (Fully Responsive)
+================================= */
+
+/* Full Page Center Alignment */
+.custom-slider-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+    position: relative;
+}
+
+/* Centered Slider */
+.custom-slider-wrapper {
+    width: 1200px; /* Default for large screens */
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fix for Image Scaling */
+.custom-slide-item img {
+    filter: brightness(1) contrast(1);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make images adjust properly */
+.custom-slide-item {
+    flex-shrink: 0;
+    width: 100%;
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    transform: scale(0.9);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.custom-slide-item.active {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 3;
+}
+
+/* ==============================
+   📌 Fixing Button Size for Different Screens
+================================= */
+.custom-slider-prev, .custom-slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #ff0080;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 10; /* Ensure buttons are on top */
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.custom-slider-prev:hover, .custom-slider-next:hover {
+    background-color: #e60073;
+    transform: scale(1.1);
+}
+
+/* ✅ Adjust button placement */
+.custom-slider-prev { left: 20px; }
+.custom-slider-next { right: 20px; }
+
+/* Slider Overflow */
+.custom-slider-overflow {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+/* Slider List */
+.custom-slider {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Dots Navigation */
+.custom-slider-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.custom-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-dot.active {
+    background-color: #ff0080;
+}
+
+/* ==============================
+   📌 Responsive Fixes (Scaling Buttons & Images)
+================================= */
+
+/* 📌 Large Desktop Screens (Above 1400px) */
+@media (min-width: 1400px) {
+    .custom-slider-wrapper {
+        width: 1400px;
+    }
+
+    .custom-slider-prev { left: 30px; }
+    .custom-slider-next { right: 30px; }
+}
+
+/* 📌 Standard Desktop (1200px - 1400px) */
+@media (max-width: 1400px) {
+    .custom-slider-wrapper {
+        width: 1200px;
+    }
+
+    .custom-slider-prev { left: 20px; }
+    .custom-slider-next { right: 20px; }
+}
+
+/* 📌 Laptops (1024px - 1200px) */
+@media (max-width: 1200px) {
+    .custom-slider-wrapper {
+        width: 1000px;
+    }
+
+    .custom-slider-prev, .custom-slider-next {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .custom-slider-prev { left: 15px; }
+    .custom-slider-next { right: 15px; }
+
+    .custom-slide-item img {
+        transform: scale(0.95);
+    }
+}
+
+/* 📌 Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .custom-slider-wrapper {
+        width: 90%;
+    }
+
+    .custom-slider-prev, .custom-slider-next {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .custom-slider-prev { left: 10px; }
+    .custom-slider-next { right: 10px; }
+
+    .custom-slide-item img {
+        transform: scale(0.9);
+    }
+
+    .custom-slider-dots {
+        bottom: 10px;
+    }
+}
+
+/* 📌 Mobile (480px - 768px) */
+@media (max-width: 768px) {
+    .custom-slider-wrapper {
+        width: 95%;
+    }
+
+    .custom-slider-prev, .custom-slider-next {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .custom-slider-prev { left: 5px; }
+    .custom-slider-next { right: 5px; }
+
+    .custom-slide-item img {
+        transform: scale(0.85);
+    }
+
+    /* Adjust dots for better spacing */
+    .custom-slider-dots {
+        bottom: 8px;
+    }
+}
+
+/* 📌 Small Mobile (Below 480px) */
+@media (max-width: 480px) {
+    .custom-slider-wrapper {
+        width: 100%;
+    }
+
+    /* Make buttons even smaller */
+    .custom-slider-prev, .custom-slider-next {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .custom-slider-prev { left: 2px; }
+    .custom-slider-next { right: 2px; }
+
+    /* Reduce image scaling */
+    .custom-slide-item img {
+        transform: scale(0.8);
+    }
+
+    /* Adjust dot navigation */
+    .custom-slider-dots {
+        bottom: 5px;
     }
 }

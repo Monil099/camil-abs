@@ -130,12 +130,14 @@ ul {
 /* general styling */
 
 /* banner-section */
-.banner-section {
+/* .banner-section {
   position: relative;
+  height: 800px;
 }
 
 .banner-section .banner-inner-img img {
   width: 100%;
+
 }
 
 .banner-section .bg-web {
@@ -155,7 +157,6 @@ ul {
   padding: 18px 30px;
   font-weight: bold;
   background-image: url(..//img/btn-bg.svg);
-  /* background-color: #ff1783; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -168,7 +169,7 @@ ul {
 .banner-section .bg-mobile {
   display: none;
   position: relative;
-}
+} */
 
 /* .banner-section .bg-mobile a {
   position: absolute;
@@ -367,7 +368,7 @@ ul {
 
 /* bootcamp-challenges-section */
 .bootcamp-challenges {
-  padding: 70px 0px 100px 0px;
+  padding: 70px 0px;
   background-image: url(../img/newimg/bootcamp-challenges.png);
   /* background-color: #fe018a; */
   background-repeat: no-repeat;
@@ -382,7 +383,7 @@ ul {
 
 .bootcamp-challenges h1 {
   color: #ffffff;
-  /* font-size: 100px; */
+  font-size: 60px;
   text-transform: uppercase;
   font-family: Inter-Bold;
   margin-bottom: 0px;
@@ -405,11 +406,11 @@ ul {
 
 .bootcamp-challenges p {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 100;
   white-space: normal;
   word-wrap: break-word;
-  max-width: 650px;
+  max-width: 800px;
   line-height: 1.4;
   color: #fff;
   font-family: Inter-Bold;
@@ -432,13 +433,17 @@ ul {
   font-size: 70px;
 }
 
+.bootcamp-challenges .bootcamp-challenges-btn{
+  margin-top: 30px;
+  text-align: right;
+}
+
 .bootcamp-challenges a {
-  float: right;
   color: rgb(255, 255, 255);
   background-color: #ff0080;
   font-weight: 600;
   font-size: 20px;
-  padding: 10px 30px;
+  padding: 15px 50px;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
@@ -454,6 +459,10 @@ ul {
 
 .challenges-dec li{
   list-style-type: disc;
+}
+
+.challenges-dec li p{
+  font-size: 30px;
 }
 
 .challenges-dec li::marker{
@@ -1131,11 +1140,11 @@ svg.icon__arrow-up {
   }
 
   .subscribe-dec h1,
-  .register-section h1 {
+  .register-section h1, .bootcamp-challenges h1 {
     font-size: 60px;
   }
 
-  .subscribe-dec h2 {
+  .subscribe-dec h2{
     font-size: 30px;
   }
 
@@ -1376,8 +1385,16 @@ svg.icon__arrow-up {
   }
 
   .subscribe-dec h1,
-  .register-section h1 {
+  .register-section h1, .bootcamp-challenges h1 {
     font-size: 40px;
+  }
+
+  .bootcamp-challenges p, .challenges-dec li p{
+    font-size: 20px;
+  }
+
+  .bootcamp-challenges .bootcamp-challenges-btn{
+    text-align: center;
   }
 
   .subscribe-dec h2 {
@@ -1710,14 +1727,17 @@ svg.icon__arrow-up {
     margin-bottom: 20px;
   }
 
-  .subscribe-dec h1 {
+  .subscribe-dec h1, .bootcamp-challenges h1 {
     font-size: 32px;
   }
 
   .register-section h1 {
     font-size: 32px;
     text-align: center;
-    ;
+  }
+
+  .bootcamp-challenges p{
+    font-size: 18px;
   }
 
   .subscribe-dec h3 {
@@ -1850,8 +1870,12 @@ svg.icon__arrow-up {
   }
 
   .subscribe-dec h1,
-  .register-section h1 {
+  .register-section h1, .bootcamp-challenges h1 {
     font-size: 36px;
+  }
+
+  .bootcamp-challenges p{
+    font-size: 16px;
   }
 
   .bootcamp-section .head-title h1,

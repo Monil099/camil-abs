@@ -2020,3 +2020,118 @@ svg.icon__arrow-up {
     padding: 5px 20px;
   }
 }
+
+/* banner-section */
+.banner-section {
+  width: 100%;
+}
+.banner-section .banner-inner {
+  height: 84vh;
+  display: flex;
+  align-items: center;
+  background-color: #ff0099;
+}
+.banner-section .banner-inner .banner-dec {
+  width: 40%;
+
+  align-items: center;
+}
+.banner-section .banner-inner .banner-dec .banner-dec-inner {
+  background-color: #f7f8f4;
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 80%;
+  margin: auto;
+}
+.banner-section .banner-inner .banner-dec h1 {
+  color: #fe018a;
+  font-size: 68px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Pandora;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+}
+.banner-section .banner-inner .banner-dec p {
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  margin-top: -6px;
+}
+.banner-section .banner-inner .banner-dec .banner-dec-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.banner-section .banner-inner .banner-dec .banner-dec-list ul {
+  padding: 0;
+  margin: 0;
+}
+.banner-section .banner-inner .banner-dec .banner-dec-list ul li {
+  font-size: 18px;
+  line-height: 36px;
+  color: #8dc963;
+}
+.banner-section .banner-inner .banner-dec .join-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+.banner-section .banner-inner .banner-dec .join-btn a {
+  color: #fff;
+  border: none;
+  font-size: 28px;
+  text-transform: uppercase;
+  padding: 20px 45px;
+  font-weight: bold;
+  background-color: #fe018a;
+  border-radius: 30px;
+}
+.banner-section .banner-inner .banner-dec .join-btn a:hover {
+  background-color: #14b327;
+}
+.banner-section .banner-inner .banner-img {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.banner-section .banner-inner .banner-img img {
+  width: 100%;
+}
+
+.slick-track,
+.slick-list {
+  height: 100vh;
+}
+
+.slick-dotted.slick-slider {
+  margin: 0;
+}
+
+.slides {
+  width: 100%;
+  height: 100vh;
+}
+.slides .slide {
+  color: #419be0;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+}
+.slick-dots li {
+  display: block;
+}

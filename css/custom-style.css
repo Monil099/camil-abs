@@ -679,7 +679,7 @@
 /* Virtual Gym Section */
 .virtual-gym-section {
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: #f6f6f7;
     padding: 50px 5%;
 }
 
@@ -724,7 +724,7 @@
 
 .workout-item img {
     width: 100%;
-    height: auto;
+    /* height: 500%; */
     display: block;
 }
 
